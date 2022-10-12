@@ -1,15 +1,34 @@
 
 
 .dash-header{
-   background-color: gray;
-   height: 80px;
+   height: 70px;
 }
 
 .sidebar-and-main-container{
-   height: calc(100vh - 80px);
+   height: calc(100vh - 70px);
    background-color: red;
 }
 
 .sidebar{
    background-color: blue;
+   height: calc(100vh - 70px);
+}
+
+.main{
+   background-color: antiquewhite;
+   height: calc(100vh - 70px);
+
+}
+
+.dash-header{
+   background-color: #F8F9FA;
+}
+
+.big-logo{
+   height: 35px;
+}
+
+.small-logo{
+   height: 40px;
+   width: 40px;
 }
