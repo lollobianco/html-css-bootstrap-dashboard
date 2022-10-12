@@ -129,7 +129,7 @@
 
                               <div class="card-header d-flex justify-content-between">
                                  <h5>Prossime classi</h5>
-                                 <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-plus"></i></button>
+                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                               </div>
                               
                               <div class="card-body">
@@ -232,7 +232,38 @@
                            <div class="card">
                               <h5 class="card-header">F.A.Q</h5>
                               <div class="card-body">
-                                 
+                                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Come aggiungere una nuova classe?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Posso usare questa dashboard da mobile?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                            </div> 
 
@@ -243,15 +274,42 @@
                            <div class="card mb-3">
                               <h5 class="card-header">Todo</h5>
                               <div class="card-body">
-                                 
+                                 <ul class="list-group">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                      <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                      <label class="form-check-label" for="thirdCheckbox">Controllare username GitHub studenti</label>
+                                    </li>
+                                  </ul>
                               </div>
                            </div> 
    
                            <div class="card">
                               <div class="card-body">
                                  <div class="card">
-                                    <div class="card-body">
-                                       
+                                    <div class="card-body p-0">
+
+                                       <img class="w-100 rounded" src="./assets/img/chart.jpg" alt="chart">
+
+                                       <ul class="list-group list-group-flush w-100">
+                                          <li class="list-group-item py-4">
+                                             <h3 class="fw-normal">Utenti attivi</h3>
+                                             <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                          </li>
+                                          <li class="list-group-item">Gennaio: 1200</li>
+                                          <li class="list-group-item">Febbraio: 800</li>
+                                          <li class="list-group-item">Marzo: 1500</li>
+                                          <li class="list-group-item rounded py-3">
+                                             <a href="">Visualizza report approfondito</a>
+                                          </li>
+                                        </ul>
                                        
                                     </div>
                                  </div>  
@@ -264,6 +322,16 @@
                      
                   </div>
 
+               </div>
+
+               <div class="offcanvas offcanvas-end w-100 w-lg-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    ...
+                  </div>
                </div>
 
             </div>  
