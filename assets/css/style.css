@@ -9,6 +9,10 @@
    background-color: red;
 }
 
+.w-40{
+   width: 40%;
+}
+
 .sidebar{
    background-color: #051E34;
    height: calc(100vh - 70px);
@@ -17,8 +21,13 @@
 .main{
    background-color: antiquewhite;
    height: calc(100vh - 70px);
-
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;
 }
+
+.main::-webkit-scrollbar {
+   display: none;
+ }
 
 .dash-header{
    background-color: #F8F9FA;
