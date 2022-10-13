@@ -4,6 +4,10 @@
    height: 70px;
 }
 
+.dropdown-toggle::after{
+   display: none;
+}
+
 .sidebar-and-main-container{
    height: calc(100vh - 70px);
 }
@@ -15,6 +19,15 @@
 .sidebar{
    background-color: #051E34;
    height: calc(100vh - 70px);
+   background-image: url(../img/sidebar-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.sidebar-hover:hover{
+   background-color: lightgray;
+   opacity: 0.1;
+   color: white;
 }
 
 .main{
