@@ -6,11 +6,10 @@
 
 .sidebar-and-main-container{
    height: calc(100vh - 70px);
-   background-color: red;
 }
 
 .w-40{
-   width: 40%;
+   width: 30%;
 }
 
 .sidebar{
@@ -21,7 +20,7 @@
 .main{
    background-color: #FFFFFF;
    height: calc(100vh - 70px);
-   -ms-overflow-style: none;  /* IE and Edge */
+   -ms-overflow-style: none;
    scrollbar-width: none;
 }
 
@@ -60,6 +59,10 @@
    margin: 0 auto;
 }
 
+.offcanvas.offcanvas-end{
+   width: 100%;
+}
+
 
 
 @media screen and (max-width: 576px){
@@ -84,5 +87,9 @@
       height: calc(100vh - 70px);
       width: calc(100% - 160px);
    
+   }
+
+   .offcanvas.offcanvas-end{
+      width: 75%;
    }
 }
