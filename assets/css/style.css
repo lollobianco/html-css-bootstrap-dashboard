@@ -25,8 +25,8 @@
 }
 
 .sidebar-hover:hover{
-   background-color: lightgray;
-   opacity: 0.1;
+   background-color: white;
+   opacity: 0.5;
    color: white;
 }
 
@@ -43,15 +43,6 @@
 
 .dash-header{
    background-color: #F8F9FA;
-}
-
-.big-logo{
-   height: 35px;
-}
-
-.small-logo{
-   height: 40px;
-   width: 40px;
 }
 
 .upper{
@@ -75,6 +66,7 @@
 .offcanvas.offcanvas-end{
    width: 100%;
 }
+
 
 
 
