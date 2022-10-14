@@ -51,6 +51,10 @@
    background-color: #155CBA;
 }
 
+.pill-hover:hover{
+   background-color: #103a70;
+}
+
 .class-avatar{
    height: 30px;
    width: 30px;

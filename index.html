@@ -1,435 +1,435 @@
 <!doctype html>
 <html lang="zxx">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Boolean Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Boolean Dashboard</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="./assets/css/style.css">
+   </head>
+   <body>
 
-   <!-- GENERAL CONTAINER -->
+      <!-- GENERAL CONTAINER -->
     
-   <div class="vh-100">
+      <div class="vh-100">
 
-      <!-- HEADER -->
+         <!-- HEADER -->
 
-      <header class="dash-header d-flex align-items-center px-2 py-0">
+         <header class="dash-header d-flex align-items-center px-2 py-0">
 
-         <div class="container-fluid">
+            <div class="container-fluid">
 
-            <div class="row px-2 justify-content-center justify-content-between align-items-center bg-white rounded">
+               <div class="row px-2 justify-content-center justify-content-between align-items-center bg-white rounded">
 
-               <div class="logos col-1 col-lg-2 col-xxl-1 lg-px-2 px-0">
-                  <img role="button" class="img-fluid small-logo p-0 d-lg-none" src="./assets/img/mobile-logo.png" alt="logo">
-                  <img role="button" class="img-fluid big-logo p-0 d-none d-lg-inline-block" src="./assets/img/logo.svg" alt="logo">
+                  <div class="logos col-1 col-lg-2 col-xxl-1 lg-px-2 px-0">
+                     <img role="button" class="img-fluid small-logo p-0 d-lg-none" src="./assets/img/mobile-logo.png" alt="logo">
+                     <img role="button" class="img-fluid big-logo p-0 d-none d-lg-inline-block" src="./assets/img/logo.svg" alt="logo">
+                  </div>
+
+                  <div class="col-10 col-lg-8 col-xxl-9">
+                     <input class="form-control bg-secondary bg-opacity-25 border-0 fs-6" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                  </div>
+
+                  <div class="d-lg-flex col-1 col-lg-2 col-xxl-2 p-0 justify-content-around align-items-center text-center">
+                     <i role="button" class="fa-solid fa-list d-none d-lg-inline-block "></i>
+                     <i role="button" class="fa-solid fa-circle-question d-none d-lg-inline-block "></i>
+                     <i role="button" class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block "></i>
+                     <i role="button" class="fa-solid fa-bell text-center text-warning fs-5 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>                     
+                     </ul>
+                  </div>
+
                </div>
 
-               <div class="col-10 col-lg-8 col-xxl-9">
-                  <input class="form-control bg-secondary bg-opacity-25 border-0 fs-6" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-               </div>
+            </div>
 
-               <div class="d-lg-flex col-1 col-lg-2 col-xxl-2 p-0 justify-content-around align-items-center text-center">
-                  <i role="button" class="fa-solid fa-list d-none d-lg-inline-block "></i>
-                  <i role="button" class="fa-solid fa-circle-question d-none d-lg-inline-block "></i>
-                  <i role="button" class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block "></i>
-                  <i role="button" class="fa-solid fa-bell text-center text-warning fs-5 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                  <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Profilo</a></li>
-                     <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                     <li><a class="dropdown-item" href="#">Logout</a></li>                     
-                   </ul>
-               </div>
+         </header>
+
+         <!-- SIDEBAR & MAIN -->
+
+         <div class="sidebar-and-main-container">
+
+            <div class="container-fluid">
+
+               <div class="row">
+
+                  <!-- SIDEBAR -->
+
+                  <div class="sidebar d-flex flex-column justify-content-between col-sm-1 p-2">
+
+                     <div class="upper-sidebar text-center px-0 pt-1">
+
+                        <div role="button" class="d-block d-flex align-items-center sidebar-hover">
+                           <i class="col-lg-4 col-12 fa-solid fa-house text-white fs-3 my-2 align-self-start"></i> 
+                           <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Home</span>
+                        </div>
+
+                        <div role="button" class="d-block d-lg-flex align-items-center justify-content-start sidebar-hover">
+                           <i class="col-lg-4 col-12 fa-solid fa-chart-simple text-white fs-3 my-2 align-self-start"></i> 
+                           <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Stats</span>
+                        </div>
+
+                        <div role="button" class="d-block d-lg-flex align-items-center justify-content-start sidebar-hover">
+                           <i class="col-lg-4 col-12 fa-solid fa-signal text-white fs-3 my-2 align-self-start"></i> 
+                           <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Signals</span>
+                        </div>
+
+                     </div>
+
+                     <div class="bottom-sidebar">
+
+                        <div role="button" class="d-block d-lg-flex align-items-center justify-content-start mb-3 text-center sidebar-hover">
+                           <i class="col-lg-4 col-12 fa-solid fa-gear text-white fs-3 my-2 align-self-start"></i>
+                           <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Admin</span>                        
+                        </div>
+                     
+                     </div>   
+
+                     
+
+                  </div>
+
+                  <!-- MAIN -->
+
+                  <div class="main col-sm-11 p-0 overflow-auto">
+
+                     <!-- BLUE-SECTION -->
+
+                     <div class="upper p-3 d-flex justify-content-between">
+
+                        <div class="col-12 col-lg-8 upper-left">
+
+                           <div>
+                              <h2 class="text-white fw-normal d-inline-block">Boolean</h2> 
+                              <span role="button" class="badge rounded-pill pill-color pill-hover">Piano blaze</span>
+                           </div>
+
+                           <div>
+                              <span role="button" class="badge rounded-pill pill-color pill-hover">3 app</span>
+                              <span class="text-white">»</span>
+                              <span role="button" class="d-lg-none badge rounded-pill pill-color pill-hover">+</span>
+                              <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color pill-hover">Boolean mobile app</span>
+                              <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color pill-hover">Boolean web app</span>
+                              <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color pill-hover">Boolean blog app</span>
+                           </div>   
+                           
+                           <div class="d-lg-none">
+                              <div class="text-white mt-2">Studenti online negli ultimi 30 minuti</div>
+                              <div class="text-white fs-3">125</div>
+                           </div>
+                           
+                           
+                        </div>
+
+                        <div class="col-lg-4 upper-right">
+
+                           <div class="d-none d-lg-block">
+                              <div class="text-white mt-2">Studenti online negli ultimi 30 minuti</div>
+                              <div class="text-white fs-3">125</div>
+                           </div>
+                           
+                        </div>
+
+                     </div>
+
+                     <!-- MAIN BOTTOM SECTION -->
+
+                     <div class="main-bottom py-3 container-fluid">
+
+                        <div class="row p-0">
+
+                           <div class="col-12 col-lg-8 p-0 pe-lg-1 mb-3 mb-lg-0"> <!-- LEFT-CARDS -->
+
+                              <div class="card mb-3"> <!-- CARD-TABLE -->
+
+                                 <div class="card-header d-flex justify-content-between">
+                                    <h5 class="fs-3">Prossime classi</h5>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                 </div>
+                                 
+                                 <div class="card-body">
+                                    <table class="table table-hover text-center align-middle">
+                                       <thead>
+                                       <tr>
+                                          <th scope="col" class="w-40 text-start">Nome</th>
+                                          <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                          <th scope="col" class="d-none d-sm-table-cell">ROI</th>
+                                          <th scope="col">Stato</th>
+                                          <th scope="col">Azioni</th>
+                                       </tr>
+                                       </thead>
+                                       <tbody class="table-group-divider">
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 75</td>
+                                             <td class="d-none d-md-table-cell">15 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-success">Done</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 76</td>
+                                             <td class="d-none d-md-table-cell">16 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-success">Done</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 77</td>
+                                             <td class="d-none d-md-table-cell">17 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-warning">Progress</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 78</td>
+                                             <td class="d-none d-md-table-cell">18 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-success">Done</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 79</td>
+                                             <td class="d-none d-md-table-cell">19 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-danger">Failed</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 80</td>
+                                             <td class="d-none d-md-table-cell">20 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-success">Done</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 81</td>
+                                             <td class="d-none d-md-table-cell">21 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-danger">Failed</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 82</td>
+                                             <td class="d-none d-md-table-cell">22 Feb 2022</td>
+                                             <td class="d-none d-sm-table-cell">20%</td>
+                                             <td><span class="badge text-bg-success">Done</span></td>
+                                             <td>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div> 
+
+                              <div class="card"> <!-- CARD-FAQ -->
+                                 <h5 class="card-header fs-3">F.A.Q</h5>
+                                 <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                       <div class="accordion-item">
+                                       <h2 class="accordion-header" id="flush-headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                             Come aggiungere una nuova classe?
+                                          </button>
+                                       </h2>
+                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                       </div>
+                                       </div>
+                                       <div class="accordion-item">
+                                       <h2 class="accordion-header" id="flush-headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                             Come posso accedere alle informazioni del mio account?
+                                          </button>
+                                       </h2>
+                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                       </div>
+                                       </div>
+                                       <div class="accordion-item">
+                                       <h2 class="accordion-header" id="flush-headingThree">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                             Posso usare questa dashboard da mobile?
+                                          </button>
+                                       </h2>
+                                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div> 
+
+                           </div>
+
+                           <div class="col-12 col-lg-4 p-0 ps-lg-1"> <!-- RIGHT-CARDS -->
+
+                              <div class="card mb-3"> <!-- CARD-TODO -->
+                                 <h5 class="card-header fs-3">Todo</h5>
+                                 <div class="card-body">
+                                    <ul class="list-group">
+                                       <li class="list-group-item">
+                                       <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                       <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                       </li>
+                                       <li class="list-group-item">
+                                       <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                       <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
+                                       </li>
+                                       <li class="list-group-item">
+                                       <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                       <label class="form-check-label" for="thirdCheckbox">Controllare username GitHub studenti</label>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div> 
+      
+                              <div class="card"> <!-- CARD-CHART -->
+                                 <div class="card-body">
+                                    <div class="card">
+                                       <div class="card-body p-0">
+
+                                          <img class="w-100 rounded" src="./assets/img/chart.jpg" alt="chart">
+
+                                          <ul class="list-group list-group-flush w-100">
+                                             <li class="list-group-item py-4">
+                                                <h3 class="fw-normal">Utenti attivi</h3>
+                                                <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                             </li>
+                                             <li class="list-group-item">Gennaio: 1200</li>
+                                             <li class="list-group-item">Febbraio: 800</li>
+                                             <li class="list-group-item">Marzo: 1500</li>
+                                             <li class="list-group-item rounded py-3">
+                                                <a href="">Visualizza report approfondito</a>
+                                             </li>
+                                          </ul>
+                                          
+                                       </div>
+                                    </div>  
+                                 </div>
+                              </div>
+
+                           </div>
+
+                        </div>
+                        
+                     </div>
+
+                  </div>
+
+                  <!-- OFFCANVAS -->
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                     <div class="offcanvas-header">
+                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+
+                     <div class="offcanvas-body"> <!-- OFFCANVAS-BODY -->
+
+                        <form class="row g-3 needs-validation" novalidate>
+                           <div class="col-md-6 position-relative">
+                              <label for="validationTooltipUsername" class="form-label">Email</label>
+                              <div class="input-group has-validation">
+                              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                              <div class="invalid-tooltip">
+                                 Please choose a unique and valid username.
+                              </div>
+                              </div>
+                           </div>
+                           <div class="mb-3 col-md-6">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                           </div>
+                           <div class="col-12 position-relative">
+                              <label for="validationTooltip03" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="validationTooltip03" required>
+                              <div class="invalid-tooltip">
+                              Please provide a valid city.
+                              </div>
+                           </div>
+                           <div class="col-md-6 position-relative">
+                           <label for="validationTooltip03" class="form-label">City</label>
+                           <input type="text" class="form-control" id="validationTooltip05" required>
+                           <div class="invalid-tooltip">
+                              Please provide a valid city.
+                           </div>
+                           </div>
+                           <div class="col-md-4 position-relative">
+                           <label for="validationTooltip04" class="form-label">State</label>
+                           <select class="form-select" id="validationTooltip04" required>
+                              <option selected disabled value="">Scegli...</option>
+                              <option>Italy</option>
+                              <option>U.S</option>
+                              <option>U.K</option>
+                           </select>
+                           <div class="invalid-tooltip">
+                              Please select a valid state.
+                           </div>
+                           </div>
+                           <div class="col-md-2 position-relative">
+                              <label for="validationTooltip02" class="form-label">CAP</label>
+                              <input type="number" class="form-control" id="validationTooltip02" required>
+                              <div class="valid-tooltip">
+                              Looks good!
+                              </div>
+                           </div>
+                           <div class="mb-3 col-12">
+                              <label for="formFile" class="form-label">Foto</label>
+                              <input class="form-control" type="file" id="formFile">
+                           </div>
+                           <div class="col-12">
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" aria-describedby="invalidCheck2" required>
+                              <label class="form-check-label" for="invalidCheck2">
+                                 Seleziona per proseguire
+                              </label>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Submit form</button>
+                           </div>
+                        </form> 
+
+                     </div>
+
+                  </div>
+
+               </div>  
 
             </div>
 
          </div>
 
-      </header>
-
-      <!-- SIDEBAR & MAIN -->
-
-      <div class="sidebar-and-main-container">
-
-         <div class="container-fluid">
-
-            <div class="row">
-
-               <!-- SIDEBAR -->
-
-               <div class="sidebar d-flex flex-column justify-content-between col-sm-1 p-2">
-
-                  <div class="upper-sidebar text-center px-0 pt-1">
-
-                     <div role="button" class="d-block d-flex align-items-center sidebar-hover">
-                        <i class="col-lg-4 col-12 fa-solid fa-house text-white fs-3 my-2 align-self-start"></i> 
-                        <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Home</span>
-                     </div>
-
-                     <div role="button" class="d-block d-lg-flex align-items-center justify-content-start sidebar-hover">
-                        <i class="col-lg-4 col-12 fa-solid fa-chart-simple text-white fs-3 my-2 align-self-start"></i> 
-                        <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Stats</span>
-                     </div>
-
-                     <div role="button" class="d-block d-lg-flex align-items-center justify-content-start sidebar-hover">
-                        <i class="col-lg-4 col-12 fa-solid fa-signal text-white fs-3 my-2 align-self-start"></i> 
-                        <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Signals</span>
-                     </div>
-
-                  </div>
-
-                  <div class="bottom-sidebar">
-
-                     <div role="button" class="d-block d-lg-flex align-items-center justify-content-start mb-3 text-center sidebar-hover">
-                        <i class="col-lg-4 col-12 fa-solid fa-gear text-white fs-3 my-2 align-self-start"></i>
-                        <span class="d-none d-lg-inline-block col-4 text-white fs-5 ms-1 align-self-center">Admin</span>                        
-                     </div>
-                  
-                  </div>   
-
-                  
-
-               </div>
-
-               <!-- MAIN -->
-
-               <div class="main col-sm-11 p-0 overflow-auto">
-
-                  <!-- BLUE-SECTION -->
-
-                  <div class="upper p-3 d-flex justify-content-between">
-
-                     <div class="col-12 col-lg-8 upper-left">
-
-                        <div>
-                           <h2 class="text-white fw-normal d-inline-block">Boolean</h2> 
-                           <span role="button" class="badge rounded-pill pill-color">Piano blaze</span>
-                        </div>
-
-                        <div>
-                           <span role="button" class="badge rounded-pill pill-color">3 app</span>
-                           <span class="text-white">»</span>
-                           <span role="button" class="d-lg-none badge rounded-pill pill-color">+</span>
-                           <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color">Boolean mobile app</span>
-                           <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color">Boolean web app</span>
-                           <span role="button" class="d-none d-lg-inline-block badge rounded-pill pill-color">Boolean blog app</span>
-                        </div>   
-                        
-                        <div class="d-lg-none">
-                           <div class="text-white mt-2">Studenti online negli ultimi 30 minuti</div>
-                           <div class="text-white fs-3">125</div>
-                        </div>
-                        
-                        
-                     </div>
-
-                     <div class="col-lg-4 upper-right">
-
-                        <div class="d-none d-lg-block">
-                           <div class="text-white mt-2">Studenti online negli ultimi 30 minuti</div>
-                           <div class="text-white fs-3">125</div>
-                        </div>
-                        
-                     </div>
-
-                  </div>
-
-                  <!-- MAIN BOTTOM SECTION -->
-
-                  <div class="main-bottom py-3 container-fluid">
-
-                     <div class="row p-0">
-
-                        <div class="col-12 col-lg-8 p-0 pe-lg-1 mb-3 mb-lg-0"> <!-- LEFT-CARDS -->
-
-                           <div class="card mb-3"> <!-- CARD-TABLE -->
-
-                              <div class="card-header d-flex justify-content-between">
-                                 <h5 class="fs-3">Prossime classi</h5>
-                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                              </div>
-                              
-                              <div class="card-body">
-                                 <table class="table table-hover text-center">
-                                    <thead>
-                                    <tr>
-                                       <th scope="col" class="w-40 text-start">Nome</th>
-                                       <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
-                                       <th scope="col" class="d-none d-sm-table-cell">ROI</th>
-                                       <th scope="col">Stato</th>
-                                       <th scope="col">Azioni</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider">
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 75</td>
-                                          <td class="d-none d-md-table-cell">15 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-success">Done</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 76</td>
-                                          <td class="d-none d-md-table-cell">16 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-success">Done</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 77</td>
-                                          <td class="d-none d-md-table-cell">17 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-warning">Progress</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 78</td>
-                                          <td class="d-none d-md-table-cell">18 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-success">Done</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 79</td>
-                                          <td class="d-none d-md-table-cell">19 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-danger">Failed</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 80</td>
-                                          <td class="d-none d-md-table-cell">20 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-success">Done</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 81</td>
-                                          <td class="d-none d-md-table-cell">21 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-danger">Failed</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td class="w-40 text-start"><img class="class-avatar me-3" src="./assets/img/class-avatar.png" alt="class-avatar">Classe 82</td>
-                                          <td class="d-none d-md-table-cell">22 Feb 2022</td>
-                                          <td class="d-none d-sm-table-cell">20%</td>
-                                          <td><span class="badge text-bg-success">Done</span></td>
-                                          <td>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                                             <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash"></i></button>
-                                          </td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
-                              </div>
-                           </div> 
-
-                           <div class="card"> <!-- CARD-FAQ -->
-                              <h5 class="card-header fs-3">F.A.Q</h5>
-                              <div class="card-body">
-                                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Come aggiungere una nuova classe?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Come posso accedere alle informazioni del mio account?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Posso usare questa dashboard da mobile?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit est quis amet odio officiis eius, rem fugit. Asperiores culpa explicabo rerum ratione praesentium dolore eveniet, at, hic molestiae minima sit.</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                           </div> 
-
-                        </div>
-
-                        <div class="col-12 col-lg-4 p-0 ps-lg-1"> <!-- RIGHT-CARDS -->
-
-                           <div class="card mb-3"> <!-- CARD-TODO -->
-                              <h5 class="card-header fs-3">Todo</h5>
-                              <div class="card-body">
-                                 <ul class="list-group">
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                      <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                      <label class="form-check-label" for="thirdCheckbox">Controllare username GitHub studenti</label>
-                                    </li>
-                                  </ul>
-                              </div>
-                           </div> 
-   
-                           <div class="card"> <!-- CARD-CHART -->
-                              <div class="card-body">
-                                 <div class="card">
-                                    <div class="card-body p-0">
-
-                                       <img class="w-100 rounded" src="./assets/img/chart.jpg" alt="chart">
-
-                                       <ul class="list-group list-group-flush w-100">
-                                          <li class="list-group-item py-4">
-                                             <h3 class="fw-normal">Utenti attivi</h3>
-                                             <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
-                                          </li>
-                                          <li class="list-group-item">Gennaio: 1200</li>
-                                          <li class="list-group-item">Febbraio: 800</li>
-                                          <li class="list-group-item">Marzo: 1500</li>
-                                          <li class="list-group-item rounded py-3">
-                                             <a href="">Visualizza report approfondito</a>
-                                          </li>
-                                        </ul>
-                                       
-                                    </div>
-                                 </div>  
-                              </div>
-                           </div>
-
-                        </div>
-
-                     </div>
-                     
-                  </div>
-
-               </div>
-
-               <!-- OFFCANVAS -->
-
-               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-
-                  <div class="offcanvas-body"> <!-- OFFCANVAS-BODY -->
-
-                     <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-6 position-relative">
-                           <label for="validationTooltipUsername" class="form-label">Email</label>
-                           <div class="input-group has-validation">
-                             <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                             <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                             <div class="invalid-tooltip">
-                               Please choose a unique and valid username.
-                             </div>
-                           </div>
-                        </div>
-                        <div class="mb-3 col-md-6">
-                           <label for="exampleInputPassword1" class="form-label">Password</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="col-12 position-relative">
-                           <label for="validationTooltip03" class="form-label">Indirizzo</label>
-                           <input type="text" class="form-control" id="validationTooltip03" required>
-                           <div class="invalid-tooltip">
-                             Please provide a valid city.
-                           </div>
-                         </div>
-                        <div class="col-md-6 position-relative">
-                          <label for="validationTooltip03" class="form-label">City</label>
-                          <input type="text" class="form-control" id="validationTooltip05" required>
-                          <div class="invalid-tooltip">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-4 position-relative">
-                          <label for="validationTooltip04" class="form-label">State</label>
-                          <select class="form-select" id="validationTooltip04" required>
-                            <option selected disabled value="">Scegli...</option>
-                            <option>Italy</option>
-                            <option>U.S</option>
-                            <option>U.K</option>
-                          </select>
-                          <div class="invalid-tooltip">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                        <div class="col-md-2 position-relative">
-                           <label for="validationTooltip02" class="form-label">CAP</label>
-                           <input type="number" class="form-control" id="validationTooltip02" required>
-                           <div class="valid-tooltip">
-                             Looks good!
-                           </div>
-                        </div>
-                        <div class="mb-3 col-12">
-                           <label for="formFile" class="form-label">Foto</label>
-                           <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="col-12">
-                           <div class="form-check">
-                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" aria-describedby="invalidCheck2" required>
-                             <label class="form-check-label" for="invalidCheck2">
-                               Seleziona per proseguire
-                             </label>
-                           </div>
-                        </div>
-                        <div class="col-12">
-                           <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                     </form> 
-
-                  </div>
-
-               </div>
-
-            </div>  
-
-         </div>
-
       </div>
-
-   </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
